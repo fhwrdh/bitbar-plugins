@@ -8,6 +8,7 @@ Plugins for [bitbar](https://getbitbar.com).
 - setup the plugins
 - symlink to the configured bitbar plugin directory
   - rename to configure refresh time as per the bitbar [docs](https://github.com/matryer/bitbar#configure-the-refresh-time)
+- in the case of node plugins, you may have to update the shebang
 
 ```bash
 $ ~/bitbar
