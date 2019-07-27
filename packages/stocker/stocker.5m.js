@@ -1,4 +1,14 @@
-#!/usr/bin/env /Users/stout/.nvm/versions/node/v12.2.0/bin/node
+#!/usr/bin/env /usr/local/bin/node
+// <bitbar.title>Stocker</bitbar.title>
+// <bitbar.version>1.0</bitbar.version>
+// <bitbar.author>Franklin Henderson</bitbar.author>
+// <bitbar.author.github>fhwrdh</bitbar.author.github>
+// <bitbar.desc>Provides a stock ticker in your menu bar, with color, percentage changes, configurable with portfolio</bitbar.desc>
+// <bitbar.dependencies>node.js</bitbar.dependencies>
+// <bitbar.image></bitbar.image>
+// <bitbar.abouturl>https://github.com/fhwrdh</bitbar.abouturl>
+//   based on https://getbitbar.com/plugins/Finance/stock-ticker.30s.py
+//   by Robert Kanter https://github.com/rkanter
 const bitbar = require('bitbar');
 const fetch = require('node-fetch');
 const sprintf = require('sprintf-js').sprintf;
