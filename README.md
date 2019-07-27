@@ -1,6 +1,6 @@
 # bitbar-plugins
 
-Plugins for [bitbar](https://github.com/matryer/bitbar).
+Plugins for [bitbar](https://getbitbar.com).
 
 ## Installation
 
