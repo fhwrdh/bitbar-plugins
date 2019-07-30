@@ -1,4 +1,4 @@
-#!/usr/bin/env /usr/local/bin/node
+#!/usr/bin/env /Users/stout/.nvm/versions/node/v12.2.0/bin/node
 // <bitbar.title>Stocker</bitbar.title>
 // <bitbar.version>1.0</bitbar.version>
 // <bitbar.author>Franklin Henderson</bitbar.author>
@@ -14,6 +14,16 @@ const fetch = require('node-fetch');
 const sprintf = require('sprintf-js').sprintf;
 const R = require('ramda');
 const path = require('path');
+const d = require('date-fns');
+
+// don't bother polling when the market is closed
+const now = new Date();
+const hour = d.getHours(now);
+const day = d.getDay(now);
+if (day < 1 || day > 5 || (hour < 6 || hour > 16)) {
+  console.log('off');
+  process.exit(0);
+}
 
 const {api_token, portfolio, primary} = require(path.resolve(
   __dirname + '/config.js',
